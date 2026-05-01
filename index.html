@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home · StatsAI</title>
+<meta name="description" content="StatsAI — A practical learning program that teaches data scientists and statisticians how to use modern AI tools (LLMs, prompt engineering, RAG, AI-assisted analysis) in their daily work.">
+<meta property="og:title" content="StatsAI — AI for Data Science & Statistics">
+<meta property="og:description" content="A practical learning program that teaches data scientists and statisticians how to use modern AI tools in their daily work.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-lang="en" dir="ltr">
+
+<div class="topbar">
+  <span data-ar>📅 الكورس الجديد متاح الآن — تعلم الذكاء الاصطناعي لعلم البيانات والإحصاء — <a href="apply.html">سجّل الآن</a></span>
+  <span data-en>📅 New cohort enrollment open — Learn AI for data science &amp; statistics — <a href="apply.html">Enroll now</a></span>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Stats<span>AI</span></a>
+    <div class="nav-links">
+      <a href="program.html" data-ar>البرنامج</a><a href="program.html" data-en>Program</a>
+      <a href="curriculum.html" data-ar>المنهج</a><a href="curriculum.html" data-en>Curriculum</a>
+      <a href="team.html" data-ar>المدرّسون</a><a href="team.html" data-en>Instructors</a>
+      <a href="documents.html" data-ar>الموارد</a><a href="documents.html" data-en>Resources</a>
+      <a href="faq.html" data-ar>أسئلة</a><a href="faq.html" data-en>FAQ</a>
+      <a href="apply.html" data-ar>التسجيل</a><a href="apply.html" data-en>Enroll</a>
+    </div>
+    <button class="lang-toggle" onclick="toggleLang()">
+      <span data-ar>EN</span><span data-en>عربي</span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" style="background: radial-gradient(ellipse at top right, rgba(67,56,202,0.12), transparent 50%), radial-gradient(ellipse at bottom left, rgba(14,116,144,0.08), transparent 50%), linear-gradient(180deg, #FAFBFE 0%, #ffffff 100%); padding: 80px 24px 100px; text-align: center;">
+  <div style="max-width: 900px; margin: 0 auto;">
+    <div style="display: inline-block; background: var(--amber); color: white; padding: 6px 16px; border-radius: 999px; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 24px;">
+      <span data-ar>برنامج تعليمي · ٢٠٢٦</span>
+      <span data-en>Learning Program · 2026</span>
+    </div>
+    <h1 style="font-size: clamp(36px, 6vw, 64px); font-weight: 700; color: var(--indigo-3); line-height: 1.15; margin-bottom: 16px; letter-spacing: -1px;">
+      <span data-ar>الذكاء الاصطناعي<br>لعلم البيانات والإحصاء</span>
+      <span data-en>AI for Data Science<br>&amp; Statistics</span>
+      <span class="latin" style="display: block; font-size: 0.7em; color: var(--teal); margin-top: 12px; font-weight: 600;">with Python &amp; R</span>
+    </h1>
+    <p style="font-size: clamp(18px, 2.5vw, 22px); color: var(--muted); max-width: 720px; margin: 0 auto 40px; line-height: 1.5;">
+      <span data-ar>برنامج عملي يُعلّم علماء البيانات والإحصائيين كيفية استخدام أدوات الذكاء الاصطناعي الحديثة — النماذج اللغوية الكبيرة، هندسة الأوامر، والتحليل بمساعدة الذكاء الاصطناعي — لإنجاز أبحاث أفضل وأسرع.</span>
+      <span data-en>A practical program that teaches data scientists and statisticians how to use modern AI tools — large language models, prompt engineering, RAG, and AI-assisted analysis — to do better research, faster.</span>
+    </p>
+    <a href="apply.html" class="btn large">
+      <span data-ar>سجّل الآن ←</span>
+      <span data-en>Enroll now →</span>
+    </a>
+    <div style="margin-top: 20px;">
+      <a href="curriculum.html" style="display: inline-block; margin-inline-end: 16px; color: var(--indigo-3); text-decoration: none; font-size: 15px; font-weight: 600; border-bottom: 2px solid transparent;">
+        <span data-ar>اعرف المزيد عن المنهج</span>
+        <span data-en>See the curriculum</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">10</div>
+      <div class="stat-label" data-ar>وحدات تعليمية</div>
+      <div class="stat-label" data-en>modules</div>
+    </div>
+    <div>
+      <div class="stat-num">40+</div>
+      <div class="stat-label" data-ar>تمرين عملي</div>
+      <div class="stat-label" data-en>hands-on labs</div>
+    </div>
+    <div>
+      <div class="stat-num">3</div>
+      <div class="stat-label" data-ar>مراحل تعليمية</div>
+      <div class="stat-label" data-en>learning phases</div>
+    </div>
+    <div>
+      <div class="stat-num">R + Py</div>
+      <div class="stat-label" data-ar>لغتا البرمجة</div>
+      <div class="stat-label" data-en>programming languages</div>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <h2 class="section-title center">
+    <span data-ar>كل ما تحتاج معرفته</span>
+    <span data-en>Everything you need to know</span>
+  </h2>
+  <p class="section-intro center large">
+    <span data-ar>استكشف البرنامج من خلال صفحاتنا التفصيلية. كل قسم يجيب على سؤال مختلف.</span>
+    <span data-en>Explore the program through our detailed pages. Each one answers a different question.</span>
+  </p>
+
+  <div class="grid-3">
+    <a href="program.html" class="card no-hover" style="text-decoration: none;">
+      <div class="card-tag" data-ar>البرنامج</div>
+      <div class="card-tag" data-en>Program</div>
+      <h3 data-ar>كيف يعمل البرنامج؟</h3>
+      <h3 data-en>How does it work?</h3>
+      <p data-ar>التصميم التعليمي، وقت الالتزام، الإعداد التقني، أدوات التطوير، ومسارات التعلم.</p>
+      <p data-en>Learning design, time commitment, technical setup, tooling, and learning tracks.</p>
+    </a>
+    <a href="curriculum.html" class="card teal no-hover" style="text-decoration: none;">
+      <div class="card-tag" data-ar>المنهج</div>
+      <div class="card-tag" data-en>Curriculum</div>
+      <h3 data-ar>ماذا ستتعلم؟</h3>
+      <h3 data-en>What will you learn?</h3>
+      <p data-ar>١٠ وحدات في ٣ مراحل: أسس علم البيانات والإحصاء بـ Python و R، ثم أدوات الذكاء الاصطناعي، ثم مشروع ختامي.</p>
+      <p data-en>10 modules in 3 phases: DS &amp; statistics foundations in Python and R, then AI tools, then a capstone project.</p>
+    </a>
+    <a href="team.html" class="card no-hover" style="text-decoration: none;">
+      <div class="card-tag" data-ar>المدرّسون</div>
+      <div class="card-tag" data-en>Instructors</div>
+      <h3 data-ar>من سيدرّسك؟</h3>
+      <h3 data-en>Who teaches?</h3>
+      <p data-ar>باحثون وممارسون يجمعون بين العمق الأكاديمي في الإحصاء والخبرة الصناعية في تعلّم الآلة.</p>
+      <p data-en>Researchers and practitioners combining academic depth in statistics with industry ML experience.</p>
+    </a>
+    <a href="documents.html" class="card amber no-hover" style="text-decoration: none;">
+      <div class="card-tag" data-ar>الموارد</div>
+      <div class="card-tag" data-en>Resources</div>
+      <h3 data-ar>المواد والكتب</h3>
+      <h3 data-en>Materials &amp; books</h3>
+      <p data-ar>الكتب المرجعية، قوالب الأكواد بـ R و Python، أوراق العمل، وموارد القراءة الإضافية.</p>
+      <p data-en>Reference books, R and Python code templates, lab worksheets, and supplementary reading.</p>
+    </a>
+    <a href="faq.html" class="card teal no-hover" style="text-decoration: none;">
+      <div class="card-tag" data-ar>أسئلة</div>
+      <div class="card-tag" data-en>FAQ</div>
+      <h3 data-ar>أسئلتك أُجيب عليها</h3>
+      <h3 data-en>Your questions answered</h3>
+      <p data-ar>المتطلبات، الأدوات، التقييم، الشهادة، حقوق الاستخدام، والمزيد.</p>
+      <p data-en>Prerequisites, tooling, assessment, certification, usage rights, and more.</p>
+    </a>
+    <a href="apply.html" class="card no-hover" style="text-decoration: none;">
+      <div class="card-tag" data-ar>التسجيل</div>
+      <div class="card-tag" data-en>Enroll</div>
+      <h3 data-ar>التسجيل خطوة بخطوة</h3>
+      <h3 data-en>How to enroll</h3>
+      <p data-ar>المتطلبات، الجدول الزمني، الاستمارة، وعملية القبول.</p>
+      <p data-en>Requirements, timeline, application form, and admission process.</p>
+    </a>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>
+    <span data-ar>انضم إلى الدفعة القادمة</span>
+    <span data-en>Join the next cohort</span>
+  </h2>
+  <p>
+    <span data-ar>سجّل الآن لتأمين مقعدك. الدفعات محدودة لضمان جودة التواصل والإرشاد.</span>
+    <span data-en>Enroll now to secure your seat. Cohorts are kept small to ensure quality interaction and mentorship.</span>
+  </p>
+  <a href="apply.html" class="btn large">
+    <span data-ar>ابدأ التسجيل ←</span>
+    <span data-en>Start enrollment →</span>
+  </a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo">Stats<span>AI</span></div>
+      <p data-ar>برنامج تعليمي عملي يُعلّم علماء البيانات والإحصائيين كيفية استخدام الذكاء الاصطناعي بفعالية في عملهم اليومي.</p>
+      <p data-en>A practical learning program that teaches data scientists and statisticians to use AI effectively in their daily work.</p>
+    </div>
+    <div>
+      <h5 data-ar>الصفحات</h5>
+      <h5 data-en>Pages</h5>
+      <ul>
+        <li><a href="program.html" data-ar>عن البرنامج</a><a href="program.html" data-en>About the Program</a></li>
+        <li><a href="curriculum.html" data-ar>المنهج</a><a href="curriculum.html" data-en>Curriculum</a></li>
+        <li><a href="team.html" data-ar>المدرّسون</a><a href="team.html" data-en>Instructors</a></li>
+        <li><a href="documents.html" data-ar>الموارد</a><a href="documents.html" data-en>Resources</a></li>
+        <li><a href="faq.html" data-ar>أسئلة شائعة</a><a href="faq.html" data-en>FAQ</a></li>
+        <li><a href="apply.html" data-ar>التسجيل</a><a href="apply.html" data-en>Enroll</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 data-ar>تواصل</h5>
+      <h5 data-en>Contact</h5>
+      <p>
+        <a href="mailto:hello@statsai.example">hello@statsai.example</a>
+      </p>
+      <p data-ar style="font-size: 13px; margin-top: 8px;">للطلاب والشركاء</p>
+      <p data-en style="font-size: 13px; margin-top: 8px;">For students and partners</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 StatsAI
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

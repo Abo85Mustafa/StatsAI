@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program · StatsAI</title>
+<meta name="description" content="How the StatsAI program works: 3-phase design, weekly cadence, technical setup.">
+<meta property="og:title" content="Program · StatsAI">
+<meta property="og:description" content="How the StatsAI program works: 3-phase design, weekly cadence, technical setup.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body data-lang="en" dir="ltr">
+
+<div class="topbar">
+  <span data-ar>📅 الكورس الجديد متاح الآن — تعلم الذكاء الاصطناعي لعلم البيانات والإحصاء — <a href="apply.html">سجّل الآن</a></span>
+  <span data-en>📅 New cohort enrollment open — Learn AI for data science &amp; statistics — <a href="apply.html">Enroll now</a></span>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Stats<span>AI</span></a>
+    <div class="nav-links">
+      <a href="program.html" data-ar>البرنامج</a><a href="program.html" data-en>Program</a>
+      <a href="curriculum.html" data-ar>المنهج</a><a href="curriculum.html" data-en>Curriculum</a>
+      <a href="team.html" data-ar>المدرّسون</a><a href="team.html" data-en>Instructors</a>
+      <a href="documents.html" data-ar>الموارد</a><a href="documents.html" data-en>Resources</a>
+      <a href="faq.html" data-ar>أسئلة</a><a href="faq.html" data-en>FAQ</a>
+      <a href="apply.html" data-ar>التسجيل</a><a href="apply.html" data-en>Enroll</a>
+    </div>
+    <button class="lang-toggle" onclick="toggleLang()">
+      <span data-ar>EN</span><span data-en>عربي</span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">
+      <span data-ar>البرنامج</span><span data-en>Program</span>
+    </div>
+    <h1>
+      <span data-ar>كيف يعمل البرنامج</span>
+      <span data-en>How the Program Works</span>
+      
+    </h1>
+    <p class="page-header-tagline">
+      <span data-ar>نظرة عامة على التصميم التعليمي ومتطلبات الانضمام والإيقاع الأسبوعي.</span>
+      <span data-en>An overview of the learning design, enrollment requirements, and weekly cadence.</span>
+    </p>
+  </div>
+</section>
+
+<section class="content">
+  <h2 class="section-title">
+    <span data-ar>التصميم التعليمي</span>
+    <span data-en>Learning design</span>
+  </h2>
+  <p class="body large">
+    <span data-ar>برنامج StatsAI مبني على ثلاث مراحل متدرجة: الأسس، ثم تطبيق الذكاء الاصطناعي، ثم المشروع الختامي. كل مرحلة تَبني على ما قبلها وتُجهّزك لما بعدها.</span>
+    <span data-en>StatsAI is built around three progressive phases: foundations, then AI integration, then a capstone. Each phase builds on the one before and prepares you for the next.</span>
+  </p>
+
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-tag" data-ar>المرحلة أ</div>
+      <div class="card-tag" data-en>Phase A</div>
+      <h3 data-ar>الأسس</h3>
+      <h3 data-en>Foundations</h3>
+      <p data-ar>علم البيانات والإحصاء بـ Python و R. ٤ وحدات.</p>
+      <p data-en>Data science and statistics in Python and R. 4 modules.</p>
+      <ul>
+        <li data-ar>أساسيات Python و R</li><li data-en>Python &amp; R essentials</li>
+        <li data-ar>التحليل الاستكشافي</li><li data-en>EDA &amp; data wrangling</li>
+        <li data-ar>الاستدلال الإحصائي</li><li data-en>Statistical inference</li>
+        <li data-ar>تعلّم الآلة الكلاسيكي</li><li data-en>Classical ML</li>
+      </ul>
+    </div>
+    <div class="card teal">
+      <div class="card-tag" data-ar>المرحلة ب</div>
+      <div class="card-tag" data-en>Phase B</div>
+      <h3 data-ar>الذكاء الاصطناعي للممارس</h3>
+      <h3 data-en>AI for the practitioner</h3>
+      <p data-ar>تطبيق LLMs على عمل الباحث الحقيقي. ٤ وحدات.</p>
+      <p data-en>Apply LLMs to real research work. 4 modules.</p>
+      <ul>
+        <li data-ar>هندسة الأوامر</li><li data-en>Prompt engineering</li>
+        <li data-ar>البرمجة بمساعدة AI</li><li data-en>AI-assisted coding</li>
+        <li data-ar>RAG ومراجعة الأدبيات</li><li data-en>RAG &amp; literature review</li>
+        <li data-ar>التحليل الإحصائي بمساعدة AI</li><li data-en>AI-assisted statistical analysis</li>
+      </ul>
+    </div>
+    <div class="card amber">
+      <div class="card-tag" data-ar>المرحلة ج</div>
+      <div class="card-tag" data-en>Phase C</div>
+      <h3 data-ar>التطبيق المتقدم</h3>
+      <h3 data-en>Advanced application</h3>
+      <p data-ar>أخلاقيات، إعادة إنتاجية، ومشروع ختامي. ٢ وحدات.</p>
+      <p data-en>Ethics, reproducibility, and capstone. 2 modules.</p>
+      <ul>
+        <li data-ar>الأخلاقيات وحدود AI</li><li data-en>Ethics &amp; AI limitations</li>
+        <li data-ar>قابلية التكرار</li><li data-en>Reproducibility</li>
+        <li data-ar>مشروع تطبيقي حقيقي</li><li data-en>Real applied project</li>
+        <li data-ar>إرشاد فردي</li><li data-en>Individual mentoring</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="subhead">
+    <span data-ar>الإيقاع الأسبوعي</span>
+    <span data-en>Weekly cadence</span>
+  </h2>
+  <p class="body">
+    <span data-ar>كل أسبوع يجمع بين المحاضرات النظرية، التمارين العملية، والإرشاد. توقّع التزاماً يتراوح بين ٨ و ١٢ ساعة أسبوعياً.</span>
+    <span data-en>Each week combines theory lectures, hands-on labs, and mentoring. Expect an 8–12 hour weekly commitment.</span>
+  </p>
+  <ul class="body">
+    <li data-ar>محاضرة نظرية أسبوعية (ساعتان)</li><li data-en>Weekly theory lecture (2 hours)</li>
+    <li data-ar>تمارين عملية موجّهة في R / Python</li><li data-en>Guided hands-on labs in R / Python</li>
+    <li data-ar>قراءة مرجعية من الكتب والمذكرات</li><li data-en>Required reading from books and notes</li>
+    <li data-ar>جلسة إرشاد جماعية أو فردية</li><li data-en>Group or individual mentoring session</li>
+    <li data-ar>تسليم تمارين أسبوعية مع تغذية راجعة</li><li data-en>Weekly homework with feedback</li>
+  </ul>
+
+  <h2 class="subhead">
+    <span data-ar>الإعداد التقني</span>
+    <span data-en>Technical setup</span>
+  </h2>
+  <p class="body">
+    <span data-ar>كل البرنامج يعمل على بيئات مفتوحة المصدر مجاناً. الأدوات الأساسية:</span>
+    <span data-en>The entire program runs on free, open-source environments. Core tooling:</span>
+  </p>
+  <ul class="body">
+    <li data-ar>Python (Anaconda أو uv) و R / RStudio</li><li data-en>Python (Anaconda or uv) and R / RStudio</li>
+    <li data-ar>Jupyter Notebooks و Quarto</li><li data-en>Jupyter Notebooks and Quarto</li>
+    <li data-ar>Git و GitHub</li><li data-en>Git and GitHub</li>
+    <li data-ar>الوصول إلى نموذج LLM (Claude, GPT, أو Gemini)</li><li data-en>Access to an LLM (Claude, GPT, or Gemini)</li>
+    <li data-ar>محرر VS Code أو Cursor</li><li data-en>VS Code or Cursor as an editor</li>
+  </ul>
+</section>
+
+<section class="cta-banner">
+  <h2>
+    <span data-ar>هل أنت مستعد للبدء؟</span>
+    <span data-en>Ready to start?</span>
+  </h2>
+  <p>
+    <span data-ar>اقرأ المنهج الكامل أو ابدأ التسجيل مباشرة.</span>
+    <span data-en>Read the full curriculum or start enrollment directly.</span>
+  </p>
+  <a href="curriculum.html" class="btn">
+    <span data-ar>المنهج كاملاً</span>
+    <span data-en>Full curriculum</span>
+  </a>
+  <a href="apply.html" class="btn outline" style="margin-inline-start:12px; background:transparent; color:white; border-color:white;">
+    <span data-ar>سجّل الآن</span>
+    <span data-en>Enroll now</span>
+  </a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo">Stats<span>AI</span></div>
+      <p data-ar>برنامج تعليمي عملي يُعلّم علماء البيانات والإحصائيين كيفية استخدام الذكاء الاصطناعي بفعالية في عملهم اليومي.</p>
+      <p data-en>A practical learning program that teaches data scientists and statisticians to use AI effectively in their daily work.</p>
+    </div>
+    <div>
+      <h5 data-ar>الصفحات</h5>
+      <h5 data-en>Pages</h5>
+      <ul>
+        <li><a href="program.html" data-ar>عن البرنامج</a><a href="program.html" data-en>About the Program</a></li>
+        <li><a href="curriculum.html" data-ar>المنهج</a><a href="curriculum.html" data-en>Curriculum</a></li>
+        <li><a href="team.html" data-ar>المدرّسون</a><a href="team.html" data-en>Instructors</a></li>
+        <li><a href="documents.html" data-ar>الموارد</a><a href="documents.html" data-en>Resources</a></li>
+        <li><a href="faq.html" data-ar>أسئلة شائعة</a><a href="faq.html" data-en>FAQ</a></li>
+        <li><a href="apply.html" data-ar>التسجيل</a><a href="apply.html" data-en>Enroll</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 data-ar>تواصل</h5>
+      <h5 data-en>Contact</h5>
+      <p>
+        <a href="mailto:hello@statsai.example">hello@statsai.example</a>
+      </p>
+      <p data-ar style="font-size: 13px; margin-top: 8px;">للطلاب والشركاء</p>
+      <p data-en style="font-size: 13px; margin-top: 8px;">For students and partners</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 StatsAI
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
