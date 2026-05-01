@@ -1,6 +1,6 @@
 # StatsAI — AI for Data Science & Statistics
 
-A clean, bilingual (English / Arabic) static website for an AI-for-Data-Science learning program. Architecture mirrors the LLM4Yemen reference site so the codebase stays simple and easy to maintain.
+A clean, bilingual (English / Arabic) static website for an AI-for-Data-Science learning program. In architecture, the codebase stays simple and easy to maintain.
 
 Built with vanilla HTML, CSS, and a small JavaScript file. Deployed for free on **GitHub Pages**.
 
